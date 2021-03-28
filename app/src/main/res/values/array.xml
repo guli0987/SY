@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="medal_xq">
+        <item>西苑</item>
+        <item>开元</item>
+    </string-array>
+    <string-array name="medal_xy">
+        <item>第一食堂一楼</item>
+        <item>第一食堂二楼</item>
+        <item>重庆饭店</item>
+    </string-array>
+    <string-array name="medal_ky">
+        <item>乾园</item>
+        <item>菁园</item>
+        <item>德园</item>
+        <item>嘉园</item>
+    </string-array>
+</resources>

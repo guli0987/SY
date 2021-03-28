@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hkd.sy">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:appComponentFactory=""
+        tools:replace="android:appComponentFactory"
+        >
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.hkd.sy.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name=".StartActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Activity_update"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Activity_update_app"
+            android:parentActivityName=".Activity_update"
+            />
+        <activity android:name=".Activity_food"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Activity_drink"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Activity_fruit"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Activity_other"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Activity_window_data"/>
+        <activity android:name=".Activity_window_data_food"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Activity_window_data"
+            />
+        <activity android:name=".Activity_window_data_order"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Internet.Login.LoginActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MyData.Activity_my_data"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MyData.Activity_my_data_avatar"
+            android:parentActivityName=".MyData.Activity_my_data"/>
+        <!--重要-->
+        <service
+            android:name=".Update.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

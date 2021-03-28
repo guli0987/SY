@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_eUsername"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="用户"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_eCommentTime"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="2019-09-24"
+        android:layout_marginRight="5dp"
+        android:textStyle="italic" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_eFavorability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="好感度:8" />
+    <TextView
+        android:id="@+id/tv_eEvaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="很好吃，下次还会再来"
+        />
+    </LinearLayout>
+</LinearLayout>

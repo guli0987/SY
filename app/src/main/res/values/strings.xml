@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">食约</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">未登录</string>
+    <string name="nav_header_subtitle">点击头像登录账号</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">账单</string>
+    <string name="menu_gallery">消息</string>
+    <string name="menu_slideshow">资料</string>
+    <string name="menu_tools">设置</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_send">联系</string>
+
+    <string name="action_index">首页</string>
+    <string name="action_order">订单</string>
+    <string name="action_myself">我的</string>
+    <string name="action_window_OrderDishes">点菜</string>
+    <string name="action_window_Details">详情</string>
+    <string name="action_window_Evaluation">评价</string>
+    <string name="action_update">更新</string>
+    <string name="update_think">
+        1.0版本:\n
+        当前版本为最初版本，东西啥的都没有
+        \n
+        1.1版本:\n
+        布局搭建
+        \n
+        1.1.1版本:\n
+        布局搭建2
+        \n
+        1.1.2版本:\n
+        下拉刷新测试
+        \n
+        1.1.3版本:\n
+        下拉刷新测试2
+        \n
+        1.1.4版本:\n
+        增加下拉框等
+        \n
+        1.1.5版本:\n
+        重新定义界面，看着不那么辣眼睛了(*/ω＼*)
+        \n
+        1.1.6版本:\n
+        尝试修复RecycleView中item位置问题
+        \n
+        1.1.7版本:\n
+        更新了图标、增加了食约启动界面、更新了窗口内食品界面、增加了食品详情界面、更新了“我的”界面、增加了订单详情界面、修复了排版紊乱问题、发现了几个新BUG
+        \n
+        1.2版本:\n
+        修复了众多bug、完善了订单逻辑，1.2版本开始尝试从服务器端获取实时数据
+    </string>
+</resources>

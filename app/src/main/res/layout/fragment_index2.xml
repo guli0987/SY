@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nes_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+    </com.youth.banner.Banner>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/image_sw"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:src="@drawable/food" />
+
+        <TextView
+            android:id="@+id/tv_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="食物"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/L2"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/image_yl"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:src="@drawable/drink" />
+
+        <TextView
+            android:id="@+id/tv_yl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="饮料"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/L3"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/image_sg"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:src="@drawable/fruit" />
+
+        <TextView
+            android:id="@+id/tv_sg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="水果"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/L4"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/image_kq"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:src="@drawable/other" />
+
+        <TextView
+            android:id="@+id/tv_kq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="卡券"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:id="@+id/tv_announce"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="公告"
+        />
+    <TextView
+        android:id="@+id/tv_announce_content"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="下面播放一条公告"
+            />
+    <TextView
+        android:id="@+id/tv_announce_all"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text=">>"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_re"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:text="推荐"
+            />
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
